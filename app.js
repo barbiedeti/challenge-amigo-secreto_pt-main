@@ -24,7 +24,7 @@ function adicionarAmigo() {
         atualizarLista();
     }
 }
-
+// funcão para atualizar a lista de amigos
 function atualizarLista() {
     let listaAtualizada = document.getElementById("listaAmigos");
     listaAtualizada.innerHTML = "";
@@ -34,7 +34,7 @@ function atualizarLista() {
         listaAtualizada.appendChild(itemLista);
     }
 }
-
+// funcão para sortear amigo e também impedir que a pessoa tire seu proprio nome
 function sortearAmigo() {
     if (listaDeAmigos.length == 0) {
         alert("Por favor, insira um nome.");
