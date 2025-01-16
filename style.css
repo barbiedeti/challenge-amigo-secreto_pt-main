@@ -23,6 +23,11 @@ body {
     align-items: center;
 }
 
+img {
+    max-width: 60%;
+    max-height: 90%;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
