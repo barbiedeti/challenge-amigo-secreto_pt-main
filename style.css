@@ -160,7 +160,7 @@ button {
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
+    color: var (--color-tertiary);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
