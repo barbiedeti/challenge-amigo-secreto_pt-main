@@ -2,11 +2,13 @@ let nome = "";
 
 //criando função de salvar nome
 function salvarNome() {
-    nome = document.getElementById("nome").value;
+   nome = document.getElementById("nome").value;
     if (nome == "") {
         alert("Por favor, insira seu nome");
     } else {
+        listaDeAmigos.push(nome);
         document.getElementById("nome").value = "";
+        atualizarLista();
     }
 }
 
@@ -51,3 +53,9 @@ function sortearAmigo() {
     document.getElementById("resultado").innerHTML = `Seu amigo secreto é: ${nomeSorteado}`;
 
 }  
+
+function reiniciarSorteio() {
+    listaDeAmigos = [];
+    document.getElementById("resultado").innerHTML = "";
+    atualizarLista();
+}

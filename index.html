@@ -12,19 +12,23 @@
 
 <body>
     <main class="main-content">
+        <div class="buttons__nav__menu">
+            <button class="button__nav__menu__inicio" onclick="location.href='index.html'">Início</button>
+            <button class="button__nav__menu__sobre" onclick="location.href='about.html'">Sobre</button>
+        </div>
         <header class="header-banner">
             <h1 class="main-title">Amigo Secreto</h1>
             <img src="assets/Unknown.png" alt="Imagem representativa de amigo secreto">
         </header>
 
         <section class="input-section">
-            <h2 class ="section-title">Digite seu nome</h2>
+            <h2 class ="section-title">Qual é o seu nome?</h2>
             <div class="input-wrapper nome-pessoal">
                 <input type="text" id="nome" class="input-name" placeholder="Digite seu nome">
                 <button class="button-add" onclick="salvarNome()">Confirmar</button>
             </div>
 
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
+            <h2 class="section-title">Adicione seus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
@@ -38,8 +42,15 @@
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
+                <button class="button-reiniciar" onclick="reiniciarSorteio()" aria-label="Reiniciar sorteio">
+                    <img src="assets/playback.png" alt="Ícone para reiniciar">
+                    Reiniciar sorteio
             </div>
         </section>
+        <footer class="rodape">
+            <p><a href="https://github.com/barbiedeti"> Criado com 💻 e ☕ por: CodeOnTheSpectrum</a></p>
+            <p>&copy; 2025 Amigo Secreto Alura + ONE G8</p>
+        </footer>
     </main>
 
     <script src="app.js" defer></script>
